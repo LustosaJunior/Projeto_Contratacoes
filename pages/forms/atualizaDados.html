@@ -198,29 +198,29 @@
                     <input type="hidden" id="hdnID" name="hdnID" value="">
                       <div class="form-group">
                         <label for="txtnome">Nome</label>
-                        <input type="text" class="form-control" <?=$condicao?> id="txtnome" name="txtnome" value="<?=$campo["nome"]?>" placeholder="Name">
+                        <input type="text" class="form-control" id="txtnome" name="txtnome" value="<?=$campo["nome"]?>" placeholder="Name">
                       </div>
                       <div class="form-group">
                         <label for="txtEmail">Email</label>
-                        <input type="email" class="form-control" onblur="validacaoEmail(this)" <?=$condicao?> id="txtEmail" name="txtEmail" value="<?=$campo["email"]?>" placeholder="Email">
+                        <input type="email" class="form-control" onblur="validacaoEmail(this)" id="txtEmail" name="txtEmail" value="<?=$campo["email"]?>" placeholder="Email">
                       </div>
                       <div class="form-group">
                         <label for="txtCPF">CPF</label>
-                        <input type="text" class="form-control" <?=$condicao?> onkeyup="mascara('###.###.###-##',this,event,true)" value="<?=$campo["CPF"]?>" id="txtCPF" name="txtCPF" placeholder="###.###.###-##">
+                        <input type="text" class="form-control" onkeyup="mascara('###.###.###-##',this,event,true)" value="<?=$campo["CPF"]?>" id="txtCPF" name="txtCPF" placeholder="###.###.###-##">
                       </div>
                       <div class="form-group">
                         <label for="txtTelefone">Telefone</label>
-                        <input type="text" class="form-control" <?=$condicao?> onkeyup="mascara('(##)# ####-####',this,event,true)" value="<?=$campo["telefone"]?>" id="txtTelefone" name="txtTelefone" placeholder="(##)# ####-####">
+                        <input type="text" class="form-control" onkeyup="mascara('(##)# ####-####',this,event,true)" value="<?=$campo["telefone"]?>" id="txtTelefone" name="txtTelefone" placeholder="(##)# ####-####">
                       </div>
                       <div class="form-group">
                         <label for="pswPassword">Senha</label>
-                        <input type="password" class="form-control" <?=$condicao?> id="pswPassword" name="pswPassword" placeholder="Password">
+                        <input type="password" class="form-control" id="pswPassword" name="pswPassword" placeholder="Password">
                       </div>
                       <div class="form-group">
                         <label for="fileCV">CV</label>
-                        <input type="file" <?=$condicao?> class="" id="fileCV" name="fileCV">
+                        <input type="file" class="" id="fileCV" name="fileCV">
                       </div>
-                      <button type="submit" <?=$condicao?> class="btn btn-success mr-2">Atualizar</button>
+                      <button type="submit" class="btn btn-success mr-2">Atualizar</button>
                     </form>
                   </div>
                 </div>
