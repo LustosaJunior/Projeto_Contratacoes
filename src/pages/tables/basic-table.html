@@ -30,9 +30,9 @@
       <!-- partial:../../partials/_navbar.html -->
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-          <a class="navbar-brand brand-logo" href="../../index.html">
+          <a class="navbar-brand brand-logo" href="../../index.php">
             
-          <a class="navbar-brand brand-logo-mini" href="../../index.html">
+          <a class="navbar-brand brand-logo-mini" href="../../index.php">
             <img src="../../assets/images/logo-mini.svg" alt="logo" /> </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
@@ -160,7 +160,7 @@
             </li>
             <li class="nav-item nav-category">Main Menu</li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">
+              <a class="nav-link" href="../../index.php">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Inicio</span>
               </a>
@@ -172,19 +172,19 @@
               $campo = mysqli_fetch_array($seleciona)
             ?>
             <li class="nav-item">
-              <a class="nav-link" href="../forms/atualizaDados.html?cockpit=0&Ticket=<?=$campo["id"]?>">
+              <a class="nav-link" href="../forms/atualizaDados.php?cockpit=0&Ticket=<?=$campo["id"]?>">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Perfil</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../tables/basic-table.html">
+              <a class="nav-link" href="../tables/basic-table.php">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Cockpit</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../samples/login.html">
+              <a class="nav-link" href="../samples/login.php">
                 <i class="menu-icon typcn typcn-shopping-bag"></i>
                 <span class="menu-title">Login/Logout</span>
               </a>

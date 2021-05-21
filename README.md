@@ -9,7 +9,7 @@ Although the template has a design like none other, it is easily customizable to
 
 <hr style="margin-bottom: 30px">
 
-[![N|Solid](screenshot.jpg)](http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/index.php)
+[![N|Solid](screenshot.jpg)](http://www.bootstrapdash.com/demo/star-admin-free/jquery/src/index.html)
 
 <h1>Credits:</h1>
 
@@ -47,7 +47,7 @@ Star Admin is released under MIT license. Star Admin is a free Bootstrap 4 admin
 
 3 - Open your terminal (Run as Administrator). You can install all the dependencies in the template by running the command npm install. All the required files are in the node modules. If you didn't run with admin authorities, you can see errors.
 
-4 - Find the file named index.php, check what all components you need. Open the file in a text editor and you can start editing.
+4 - Find the file named index.html, check what all components you need. Open the file in a text editor and you can start editing.
 
 5 - Now that your project has now kick-started, all you need to do now is to code, code, and code to your heart's content.
 
