@@ -152,7 +152,7 @@
                   <div class="dot-indicator bg-success"></div>
                 </div>
                 <div class="text-wrapper">
-                  <p class="profile-name"><?html echo $_SESSION["NameUser"] ?></p>
+                  <p class="profile-name"></p>
                   <p class="designation">Premium user</p>
                 </div>
               </a>
@@ -198,19 +198,19 @@
                     <input type="hidden" id="hdnID" name="hdnID" value="">
                       <div class="form-group">
                         <label for="txtnome">Nome</label>
-                        <input type="text" class="form-control" id="txtnome" name="txtnome" value="<?=$campo["nome"]?>" placeholder="Name">
+                        <input type="text" class="form-control" id="txtnome" name="txtnome" value="" placeholder="Name">
                       </div>
                       <div class="form-group">
                         <label for="txtEmail">Email</label>
-                        <input type="email" class="form-control" onblur="validacaoEmail(this)" id="txtEmail" name="txtEmail" value="<?=$campo["email"]?>" placeholder="Email">
+                        <input type="email" class="form-control" onblur="validacaoEmail(this)" id="txtEmail" name="txtEmail" value="" placeholder="Email">
                       </div>
                       <div class="form-group">
                         <label for="txtCPF">CPF</label>
-                        <input type="text" class="form-control" onkeyup="mascara('###.###.###-##',this,event,true)" value="<?=$campo["CPF"]?>" id="txtCPF" name="txtCPF" placeholder="###.###.###-##">
+                        <input type="text" class="form-control" onkeyup="mascara('###.###.###-##',this,event,true)" value="" id="txtCPF" name="txtCPF" placeholder="###.###.###-##">
                       </div>
                       <div class="form-group">
                         <label for="txtTelefone">Telefone</label>
-                        <input type="text" class="form-control" onkeyup="mascara('(##)# ####-####',this,event,true)" value="<?=$campo["telefone"]?>" id="txtTelefone" name="txtTelefone" placeholder="(##)# ####-####">
+                        <input type="text" class="form-control" onkeyup="mascara('(##)# ####-####',this,event,true)" value="" id="txtTelefone" name="txtTelefone" placeholder="(##)# ####-####">
                       </div>
                       <div class="form-group">
                         <label for="pswPassword">Senha</label>
