@@ -9,7 +9,7 @@
       "**/.*",
       "assets",
       "Gruntfile.coffee",
-      "index.php",
+      "index.html",
       "LICENSE",
       "package.json"
   ]

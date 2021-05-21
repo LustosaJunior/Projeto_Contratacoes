@@ -2,7 +2,7 @@
   "name": "Star_admin",
   "version": "3.5.0",
   "description": "",
-  "main": "index.php",
+  "main": "index.html",
   "dependencies": {
     "@mdi/font": "3.3.92",
     "bootstrap": "^4.4.1",

@@ -1,7 +1,7 @@
 function AjaxDeleta(id){    
     $.ajax({
         method: "get",
-        url: "deletaUser.php",
+        url: "deletaUser.html",
         data: { 
             id: id
         }
@@ -9,5 +9,5 @@ function AjaxDeleta(id){
 }
 
 function AtualizaUser(ID){
-    document.location.href= `../forms/atualizaDados.php?Ticket=${ID}&cockpit=1`;
+    document.location.href= `../forms/atualizaDados.html?Ticket=${ID}&cockpit=1`;
 }

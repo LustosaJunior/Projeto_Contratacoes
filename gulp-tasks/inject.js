@@ -10,7 +10,7 @@ var merge = require("merge-stream");
 /* inject partials like sidebar and navbar */
 gulp.task("injectPartial", function () {
   return gulp
-    .src(["./*/pages/*/*.html", "./*/index.php"], {
+    .src(["./*/pages/*/*.html", "./*/index.html"], {
       base: "./",
     })
     .pipe(injectPartials())
@@ -82,10 +82,10 @@ gulp.task("replacePath", function () {
         'href="http://www.bootstrapdash.com/demo/plus/jquery/documentation/documentation.html"'
       )
     )
-    .pipe(replace('href="index.php"', 'href="../../index.php"'))
+    .pipe(replace('href="index.html"', 'href="../../index.html"'))
     .pipe(gulp.dest("."));
   var replacePath2 = gulp
-    .src("./*/index.php", {
+    .src("./*/index.html", {
       base: "./",
     })
     .pipe(replace('src="assets/images/', 'src="assets/images/'))

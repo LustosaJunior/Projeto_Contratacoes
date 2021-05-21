@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BEM VINDO <?php session_start(); echo $_SESSION["NameUser"] ?></title>
+    <title>BEM VINDO</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
@@ -30,9 +30,9 @@
       <!-- partial:../../partials/_navbar.html -->
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-          <a class="navbar-brand brand-logo" href="../../index.php">
+          <a class="navbar-brand brand-logo" href="../../index.html">
             
-          <a class="navbar-brand brand-logo-mini" href="../../index.php">
+          <a class="navbar-brand brand-logo-mini" href="../../index.html">
             <img src="../../assets/images/logo-mini.svg" alt="logo" /> </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
@@ -125,7 +125,7 @@
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
                   <img class="img-md rounded-circle" src="../../assets/images/faces/face8.jpg" alt="Profile image">
-                  <p class="mb-1 mt-3 font-weight-semibold"><?php echo $_SESSION["NameUser"]; ?></p>
+                  <p class="mb-1 mt-3 font-weight-semibold"></p>
                   
                 </div>
                 <a class="dropdown-item">My Profile <span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>
@@ -153,38 +153,32 @@
                   <div class="dot-indicator bg-success"></div>
                 </div>
                 <div class="text-wrapper">
-                  <p class="profile-name"><?php echo $_SESSION["NameUser"] ?></p>
+                  <p class="profile-name"><?html echo $_SESSION["NameUser"] ?></p>
                   <p class="designation">Premium user</p>
                 </div>
               </a>
             </li>
             <li class="nav-item nav-category">Main Menu</li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.php">
+              <a class="nav-link" href="../../index.html">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Inicio</span>
               </a>
             </li>
-            <?php
-              $conexao=mysqli_connect("localhost", "root", "", "NSolucoes");
-              $nome = $_SESSION["NameUser"];
-              $seleciona = mysqli_query($conexao, "SELECT * FROM USERS WHERE nome = '$nome'");
-              $campo = mysqli_fetch_array($seleciona)
-            ?>
             <li class="nav-item">
-              <a class="nav-link" href="../forms/atualizaDados.php?cockpit=0&Ticket=<?=$campo["id"]?>">
+              <a class="nav-link" href="../forms/atualizaDados.html?cockpit=0&Ticket=<?=$campo["id"]?>">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Perfil</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../tables/basic-table.php">
+              <a class="nav-link" href="../tables/basic-table.html">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Cockpit</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../samples/login.php">
+              <a class="nav-link" href="../samples/login.html">
                 <i class="menu-icon typcn typcn-shopping-bag"></i>
                 <span class="menu-title">Login/Logout</span>
               </a>
@@ -209,22 +203,16 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <?php 
-                          $conexao=mysqli_connect("localhost", "root", "", "NSolucoes");
-                          $nome = $_SESSION["NameUser"];
-                          $seleciona = mysqli_query($conexao, "SELECT * FROM USERS WHERE nome <> '$nome'");
-                          while($campo = mysqli_fetch_array($seleciona)){?>
-                            <tr>
-                              <td><?=$campo["id"]?></td>
-                              <td><?=$campo["nome"]?></td>
-                              <td onclick="AjaxDeleta(<?=$campo["id"]?>)">
-                                <i class="fa fa-trash-o"></i>
-                              </td>
-                              <td onclick="AtualizaUser(<?=$campo["id"]?>)">
-                                <i class="fa fa-pencil"></i>
-                              </td>
-                            </tr>
-                        <?php }?>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td onclick="AjaxDeleta()">
+                            <i class="fa fa-trash-o"></i>
+                          </td>
+                          <td onclick="AtualizaUser()">
+                            <i class="fa fa-pencil"></i>
+                          </td>
+                        </tr>
                       </tbody>
                     </table>
                   </div> 
